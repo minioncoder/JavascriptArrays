@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="arrayFuncs.js"></script>
+</head>
+
+<body class="container">
+    Hello JS <br />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <button class="btn btn-success" onclick="ArrayConcat()">Concat Two Arrays</button>
+    <p id="arraysConcat"></p>
+    <br />
+
+    <button class="btn btn-primary" onclick="ArrayCopy()">Copy with in Array</button>
+    <p id="copyWithinArray"></p>
+
+    <button class="btn btn-warning" onclick="ArrayValueOf()">Gives values with in Array</button>
+    <p id="valueOf"></p>
+
+    <button class="btn btn-success" onclick="ArrayPush()">Add new entry to Array</button><br/>
+    <strong>Adding new value to an array at end using push</strong>
+    <p id="pushArray"></p>
+
+    <button class="btn btn-secondary" onclick="ArrayUnshift()">Array Unshift</button><br/>
+    <strong>Adding new value to start of the array using unshift</strong>
+    <p id="unshiftArray"></p>
+    
+    <button class="btn btn-success" onclick="ArrayPop()">Array Pop operation</button><br/>
+    <strong>Removing an element from array</strong>
+    <p id="popArray"></p>
+
+    <button class="btn btn-success" onclick="ArrayShift()">Array shift operation</button><br/>
+    <strong>Removing element from start of the array</strong>
+    <p id="shiftArray"></p>
+
+    <button class="btn btn-secondary" onclick="ArraySlice()">Array slice operation</button><br />
+    <strong>Slice the array by selecting parts of array and returns the values</strong>
+    <p id="sliceArray"></p>
+
+    <button class="btn btn-warning" onclick="ArrayReverse()">Array Reverse</button><br/>
+    <strong>Reverse the array using reverse method</strong>
+    <p id="reverseArray"></p>
+
+    <button class="btn btn-primary" onclick="ArrayMap()">Array Map</button><br />
+    <strong>Creates new array with result of the map function</strong>
+    <p id="mapArray"></p>
+
+    <button class="btn btn-secondary" onclick="ArraySort()">Array sort</button><br/>
+    <strong>Sorts the elements of the array</strong>
+    <p id="sortArray"></p>
+
+    <button class="btn btn-primary" onclick="ArrayIndexof()">Array IndexOf</button><br/>
+    <strong>Gets the index of array element</strong>
+    <p id="indexofArray"></p>
+
+</body>
+
+</html>
