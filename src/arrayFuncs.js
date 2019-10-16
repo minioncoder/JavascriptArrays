@@ -73,24 +73,125 @@ var ArrayIndexof = function() {
     document.getElementById("indexofArray").innerHTML = index;
 }
 
-// //unshift method adds new value to the beginning of the array
-// var ArrayMap = function() {
-//     var names = [{'id': 1, 'name': 'Nina'}, {'id': 2, 'name': 'Arty'}];
-//     names.map(nameMap);
-//     console.log(names);
-//     document.getElementById("mapArray").innerHTML = names;
-// }
+//map method maps new element or function calls to the array
+var ArrayMap = function() {
+    var names = [{'id': 1, 'name': 'Nina'}, {'id': 2, 'name': 'Arty'}];
+    var newmaps = names.map(nameMap);
+    for(var i=0; i<names.length; i++){
+        names["newname"] = names.map(nameMap);
+    }
+    console.log(names);
+    document.getElementById("mapArray").innerHTML = newmaps;
+}
 
-// function nameMap(names) {
-//     var newNames = names.name;
-//     newNames.concat(names.id);
-//     console.log(newNames);
-//     return newNames;
-// }
+function nameMap(names) {
+    var newNames = names.name + names.id.toString();
+    return newNames;
+}
 
 //reverse array method reverses the array elements
 var ArrayReverse = function() {
     var names = ['JJ', 'PP', 'TT'];
     names.reverse();
-    document.getElementById('reverseArray').innerHTML = names;
+    document.getElementById("reverseArray").innerHTML = names;
 }
+
+// fill method fills the array elements with a static value for entire array
+var ArrayFill = function() {
+    var fruitAr = ['Apple', 'Orange', 'PineApple'];
+    var f = fruitAr.fill('Grapes');
+    document.getElementById("fillAr").innerHTML = f;
+}
+
+// filter method
+var ArrayFilter = function(){
+    var ages = [12,16,20,35,50];
+    document.getElementById("filterAr").innerHTML = ages.filter(checkJuniorAge);
+}
+
+function checkJuniorAge(age){
+    return age <= 20;
+}
+
+
+// find method returns the value of the first elem with the condition
+var ArrayFind = function() {
+    var ages = [13,16,18,24];
+    document.getElementById("findAr").innerHTML = ages.find(checkJuniorAge);
+}
+
+// findIndex method returns index of first elem in an array that pass the condition
+var ArrayFindIndex = function() {
+    var ages = [12,16,18,20,25];
+    document.getElementById("findIdAr").innerHTML = ages.findIndex(checkJuniorAge);
+}
+
+// forEach methods calls functions once for each arr element
+var ArrayForEach = function() {
+    var ages = [13,16,20,25];
+    ages.forEach(myfunc); 
+}
+var myFunc = function(elem, index) {
+    document.getElementById("forEachAr").innerHTML += index + "::" + elem;
+}
+
+// from method creates an Array from a string   
+var ArrayFrom = function() {
+    var str = "HELLO";
+    document.getElementById("fromAr").innerHTML = Array.from(str);
+}
+
+// includes method checks if an array includes the values
+var ArrayIncludes = function() {
+    var fruits = ['Apple', 'Banana', 'Orange', 'Lemon'];
+    document.getElementById("includeAr").innerHTML = fruits.includes('Apple');
+}
+
+// isArray checks whether an obj is an array or not
+var Arrayis = function() {
+    var arr = ['Hi', 'Hello'];
+    document.getElementById("isAr").innerHTML = Array.isArray(arr);
+}
+
+// join methods joins all the elements converting to a string
+var ArrayJoin = function(){
+    var arr = ['Apple', 'Orange', 'Grapes'];
+    document.getElementById("joinAr").innerHTML = arr.join();
+}
+
+// Keys method creates an array iterator obj, containing the keys of the array
+var ArrayKeys = function() {
+    var fs = ['Kiwi', 'Apple', 'Grape'];
+    var fk = fs.keys();
+
+    for(x in fk){
+        document.getElementById("keysAr").innerHTML += x + "<br>";
+    }
+}
+
+// lastIndexOf searches at the end of the Arr
+var ArrayLastIndexOf = function() {
+    var fruits = ['Apple', 'Banana', 'Orange'];
+    var a = fruits.lastIndexOf('Apple');
+    document.getElementById("lastIdAr").innerHTML = a;
+}
+
+// reduce method reduces the values of an array to single value
+var ArrayReduce = function() {
+    var fs = [10, 20, 50];
+    document.getElementById("reduceAr").innerHTML = fs.reduce(sumArr);
+}
+function sumArr(sum, num) {
+    return sum + num;
+}
+
+// toString
+var ArrayToString = function() {
+    var fruits = ['Apple', 'Orange', 'Banana', 'Lemon'];
+    document.getElementById("toStrAr").innerHTML = fruits.toString();
+}
+
+// Properties of Arrays
+// Constructor
+// length
+// prototype

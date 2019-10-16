@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="arrayFuncs.js"></script>
 </head>
 
@@ -28,25 +28,26 @@
     <p id="arraysConcat"></p>
     <br />
 
+    <!--copy-->
     <button class="btn btn-primary" onclick="ArrayCopy()">Copy with in Array</button>
     <p id="copyWithinArray"></p>
 
     <button class="btn btn-warning" onclick="ArrayValueOf()">Gives values with in Array</button>
     <p id="valueOf"></p>
 
-    <button class="btn btn-success" onclick="ArrayPush()">Add new entry to Array</button><br/>
+    <button class="btn btn-success" onclick="ArrayPush()">Add new entry to Array</button><br />
     <strong>Adding new value to an array at end using push</strong>
     <p id="pushArray"></p>
 
-    <button class="btn btn-secondary" onclick="ArrayUnshift()">Array Unshift</button><br/>
+    <button class="btn btn-secondary" onclick="ArrayUnshift()">Array Unshift</button><br />
     <strong>Adding new value to start of the array using unshift</strong>
     <p id="unshiftArray"></p>
-    
-    <button class="btn btn-success" onclick="ArrayPop()">Array Pop operation</button><br/>
+
+    <button class="btn btn-success" onclick="ArrayPop()">Array Pop operation</button><br />
     <strong>Removing an element from array</strong>
     <p id="popArray"></p>
 
-    <button class="btn btn-success" onclick="ArrayShift()">Array shift operation</button><br/>
+    <button class="btn btn-success" onclick="ArrayShift()">Array shift operation</button><br />
     <strong>Removing element from start of the array</strong>
     <p id="shiftArray"></p>
 
@@ -54,7 +55,7 @@
     <strong>Slice the array by selecting parts of array and returns the values</strong>
     <p id="sliceArray"></p>
 
-    <button class="btn btn-warning" onclick="ArrayReverse()">Array Reverse</button><br/>
+    <button class="btn btn-warning" onclick="ArrayReverse()">Array Reverse</button><br />
     <strong>Reverse the array using reverse method</strong>
     <p id="reverseArray"></p>
 
@@ -62,13 +63,70 @@
     <strong>Creates new array with result of the map function</strong>
     <p id="mapArray"></p>
 
-    <button class="btn btn-secondary" onclick="ArraySort()">Array sort</button><br/>
+    <button class="btn btn-secondary" onclick="ArraySort()">Array sort</button><br />
     <strong>Sorts the elements of the array</strong>
     <p id="sortArray"></p>
 
-    <button class="btn btn-primary" onclick="ArrayIndexof()">Array IndexOf</button><br/>
-    <strong>Gets the index of array element</strong>
-    <p id="indexofArray"></p>
+    <!--fill array-->
+    <button class="btn btn-primary" onclick="ArrayFill()">Array Fill</button><br />
+    <strong>Gets the filled array with static value</strong>
+    <p id="fillAr"></p>
+
+    <!--filter array-->
+    <button class="btn btn-primary" onclick="ArrayFilter()">Array Filter</button><br />
+    <strong>Gets the filtered array with function</strong>
+    <p id="filterAr"></p>
+
+    <!--find array-->
+    <button class="btn btn-primary" onclick="ArrayFind()">Array Find</button><br />
+    <strong>Returns first element of the array Find</strong>
+    <p id="findAr"></p>
+
+    <!--for Each-->
+    <button class="btn btn-primary" onclick="ArrayForEach()">Array For Each</button><br />
+    <strong>Returns for each on array</strong>
+    <p id="forEachAr"></p>
+
+    <!--from-->
+    <button class="btn btn-primary" onclick="ArrayFrom()">Array From</button><br />
+    <strong>Creates an array from string</strong>
+    <p id="fromAr"></p>
+
+    <!--includes-->
+    <button class="btn btn-primary" onclick="ArrayIncludes()">Array Includes</button><br />
+    <strong>Checks if array contains the values</strong>
+    <p id="includeAr"></p>
+
+    <!--is Array-->
+    <button class="btn btn-primary" onclick="Arrayis()">Array Is Array</button><br />
+    <strong>Returns true if it is an array</strong>
+    <p id="isAr"></p>
+
+    <!--Array Keys-->
+    <button class="btn btn-primary" onclick="ArrayKeys()">Array Keys method</button><br />
+    <strong>Gets the indexes keys of the Array as object</strong>
+    <p id="keysAr"></p>
+
+    <!--Array Keys-->
+    <button class="btn btn-primary" onclick="ArrayJoin()">Array Join method</button><br />
+    <strong>Joins the array to a string</strong>
+    <p id="joinAr"></p>
+
+    <!--last Index of-->
+    <button class="btn btn-primary" onclick="ArrayLastIndexof()">Array Last IndexOf</button><br />
+    <strong>Gets the last index of the array elem</strong>
+    <p id="lastIdAr"></p>
+
+    <!--Reduce-->
+    <button class="btn btn-primary" onclick="ArrayReduce()">Array Reduce function</button><br />
+    <strong>Reduces the array by inner functions like sum, del</strong>
+    <p id="reduceAr"></p>
+
+    <!--To string-->
+    <button class="btn btn-primary" onclick="ArrayToString()">Array To String</button><br />
+    <strong>Converts Array to string</strong>
+    <p id="toStrAr"></p>
+
 
 </body>
 
