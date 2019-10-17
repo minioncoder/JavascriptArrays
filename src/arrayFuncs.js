@@ -54,16 +54,15 @@ var ArrayShift = function() {
 
 //sort method sorts the values of the array
 var ArraySort = function() {
-    var cities = ['Oxford', 'Phili', 'Penn'];
-    cities.sort();
-    document.getElementById("sortArray").innerHTML = cities;
+    var cities = ['Oxford', 'Phili', 'Penn', 'Atlanta'];
+    document.getElementById("sortArray").innerHTML = cities.sort();
 }
 
 //slice method selects part of the array and returns new array
 var ArraySlice = function() {
     var cities = ['Oxford', 'Phili', 'Penn', 'Newyork'];
-    var newar = cities.slice(0, 2);
-    document.getElementById("unshiftArray").innerHTML = newar;
+    var newar = cities.slice(1, 3);
+    document.getElementById("sliceArray").innerHTML = newar;
 }
 
 //indexOf method searches element of the array and returns its index
@@ -128,11 +127,11 @@ var ArrayFindIndex = function() {
 
 // forEach methods calls functions once for each arr element
 var ArrayForEach = function() {
-    var ages = [13,16,20,25];
-    ages.forEach(myfunc); 
+    var cities = ["Oxford","Penn","Phili"];
+    cities.forEach(myFunc); 
 }
 var myFunc = function(elem, index) {
-    document.getElementById("forEachAr").innerHTML += index + "::" + elem;
+    document.getElementById("forEachAr").innerHTML += index + "::" + elem + "<br>";
 }
 
 // from method creates an Array from a string   
@@ -144,7 +143,7 @@ var ArrayFrom = function() {
 // includes method checks if an array includes the values
 var ArrayIncludes = function() {
     var fruits = ['Apple', 'Banana', 'Orange', 'Lemon'];
-    document.getElementById("includeAr").innerHTML = fruits.includes('Apple');
+    document.getElementById("includeAr").innerHTML = fruits.includes('Oxford');
 }
 
 // isArray checks whether an obj is an array or not
@@ -164,7 +163,7 @@ var ArrayKeys = function() {
     var fs = ['Kiwi', 'Apple', 'Grape'];
     var fk = fs.keys();
 
-    for(x in fk){
+    for(x of fk){
         document.getElementById("keysAr").innerHTML += x + "<br>";
     }
 }
